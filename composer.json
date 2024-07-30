@@ -1,0 +1,29 @@
+{
+    "name": "iankibet/influxdb",
+    "description": "Laravel package for interacting with influxDB",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Iankibet\\InfluxDb\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iankibet\\InfluxDb\\InfluxDbServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Ian Kibet",
+            "email": "kibethosea8@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "influxdata/influxdb-client-php": "3.*"
+    }
+}
