@@ -12,7 +12,7 @@ composer require iankibet/influxdb
 2. Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --provider="IanKibet\InfluxDB\InfluxDBServiceProvider"
+php artisan vendor:publish --provider="Iankibet\InfluxDB\InfluxDBServiceProvide"
 ```
 
 3. Configure the package by setting the following environment variables in your `.env` file:
@@ -54,3 +54,4 @@ $from = '2021-01-01T00:00:00Z';
 $to = '2021-01-02T00:00:00Z';
 $res = InfluxDb::query('measurement_name', $fields, $from, $to);
 ```
+For more details, visit the [InfluxDB Integration for Laravel: A Comprehensive Guide](https://iankibet.com/packages/laravel/influxdb).
